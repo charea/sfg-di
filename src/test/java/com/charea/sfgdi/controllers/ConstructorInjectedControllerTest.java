@@ -1,6 +1,6 @@
 package com.charea.sfgdi.controllers;
 
-import com.charea.sfgdi.services.GreetingServiceImpl;
+import com.charea.sfgdi.services.ConstructorInjectedGreetingService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -9,7 +9,7 @@ class ConstructorInjectedControllerTest {
 
     @BeforeEach
     void setUp() {
-        controller = new ConstructorInjectedController(new GreetingServiceImpl());
+        controller = new ConstructorInjectedController(new ConstructorInjectedGreetingService());
     }
 
     @Test
